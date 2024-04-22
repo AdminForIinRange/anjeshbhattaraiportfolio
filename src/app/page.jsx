@@ -8,30 +8,23 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 
-import Asterisks from "../svg/Asterisks";
+import Asterisks from "../svg/Asterisks.svg";
 import Image from "next/image";
- 
+import Home from "@/components/home/home";
 
 const page = () => {
   return (
-    <>
-    <HStack   w={"100%"} h={"100%"} align={"center"} justify={"center"} >
+    <Box bgColor={"#0B1315"} w={"100%"} h={"100vh"}  >
+      
+        <Home />
+     
+      <Box
+        bgGradient="linear(to-b, #000000, #3900B3, #000000)"
+        w="100%"
+        h="100vh"
+      ></Box>
+    </Box>
+  );
+};
 
-      <VStack w={"100%"} h={"100%"} align={"center"} justify={"center"}>
-
-        <Text fontSize={["200px"]} color={"white"}>
-          Anjesh
-        </Text>
-        <Text fontSize={["60"]} color={"white"} >
-        Full Stack Developer 
-        </Text>
-        <Image  w={100}  h={100}  src={Asterisks}/>
-      </VStack>
-    </HStack>
-    
-    </>
-  )
-}
-
-
-export default page
+export default page;

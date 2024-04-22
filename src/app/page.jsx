@@ -1,4 +1,12 @@
-import React from 'react'
+import {
+  Box,
+  HStack,
+  VStack,
+  Text,
+  Button,
+  Spacer,
+  useMediaQuery,
+} from "@chakra-ui/react";
 
 const page = () => {
   return (
